@@ -55,15 +55,15 @@ function About() {
               </h3>
               <div className="space-y-8">
                 {languages.map((lang, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between items-center mb-3">
+                  <div key={index} className="w-full">
+                    <div className="flex justify-between items-center mb-3 flex-wrap gap-2">
                       <div className="flex items-center space-x-3">
-                        <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${lang.color}`}></div>
-                        <span className="font-medium">{lang.language}</span>
+                        <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${lang.color} flex-shrink-0`}></div>
+                        <span className="font-medium text-sm sm:text-base">{lang.language}</span>
                       </div>
-                      <span className="text-blue-400 font-semibold">{lang.level}</span>
+                      <span className="text-blue-400 font-semibold text-sm sm:text-base">{lang.level}</span>
                     </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden w-full max-w-full">
                       <div 
                         className={`h-full bg-gradient-to-r ${lang.color} rounded-full transition-all duration-1000`}
                         style={{ width: `${lang.percentage}%` }}

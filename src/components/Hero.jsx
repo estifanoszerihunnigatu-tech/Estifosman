@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import profilePhoto from '/photo_2026-01-14_22-20-39.jpg'
 
 function Hero() {
   const [currentText, setCurrentText] = useState('')
@@ -38,7 +39,7 @@ function Hero() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center pt-24 md:pt-16 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
       
@@ -47,7 +48,7 @@ function Hero() {
           <div className="relative inline-block mb-8">
             <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden border-4 border-blue-500/30 shadow-xl animate-float">
               <img 
-                src="/photo_2026-01-14_22-20-39.jpg" 
+                src={profilePhoto}
                 alt="Estifanos Zerihun"
                 className="w-full h-full object-cover"
               />
