@@ -139,7 +139,12 @@ html {
   }
   
   #home {
-    padding-top: 4rem !important;
+    padding-top: 6rem !important;
+  }
+  
+  /* Add extra margin to profile photo on mobile */
+  #home .relative.inline-block {
+    margin-top: 3rem !important;
   }
   
   /* Better touch targets */
